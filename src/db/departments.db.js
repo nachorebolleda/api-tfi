@@ -1,10 +1,5 @@
 const pool = require("./connection.db");
-const TABLE='departments'
 
-/**
- * Retorna todos los departamentos
- * @returns 
- */
 module.exports.getDatos = async function () {
   let conn;
   try {
