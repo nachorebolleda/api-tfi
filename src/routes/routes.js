@@ -8,4 +8,11 @@ router.get('/alumnos', async (req,res)=>{
     res.status(200).json(datos)
 });
 
+// GET /contenedores
+router.get('/contenedores', async (req,res)=>{
+    const datos = await DB.Departmens.getInfo();    
+    res.status(200).json(datos)
+});
+
+
 module.exports=router
