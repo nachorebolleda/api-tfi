@@ -8,6 +8,4 @@ const pool = mysql.createConnection({
     connectionLimit: 5,
 });
 
-console.log("Db connected");
-
 module.exports=pool

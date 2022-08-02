@@ -4,7 +4,7 @@ module.exports.getDatos = async function () {
   let conn;
   try {
     conn = await pool.getConnection();
-    const rows = await conn.query('SELECT * FROM alumnos WHERE Legajo=46285');
+    const rows = await conn.query('SELECT * FROM alumnos');
     return rows;
   } catch (err) {
     return Promise.reject(err);
