@@ -20,6 +20,6 @@ app.get('/ping',(req,res)=>{
     res.json({msg:'pong'})
 });
 
-app.use(ROUTES.Departments);
+app.use(ROUTES.Routes);
 
 module.exports=app
