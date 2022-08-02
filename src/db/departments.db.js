@@ -18,8 +18,13 @@ module.exports.getDatos = function () {
   let conn;
   try {
     conn = pool.getConnection();
-    const rows = conn.query('SELECT * FROM alumnos');
-    return rows;
+    //const rows = conn.query('SELECT * FROM alumnos');
+    return {
+      "squadName": "Super hero squad",
+      "homeTown": "Metro City",
+      "formed": 2016,
+      "secretBase": "Super tower"
+    }
   } catch (err) {
     return Promise.reject(err);
   } finally {
